@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF64BD311DDB2CD3008ACF46 /* Weekday.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF64BD301DDB2CD3008ACF46 /* Weekday.swift */; };
+		CF64BD331DDB2D08008ACF46 /* TwentyFourHourPayStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF64BD321DDB2D08008ACF46 /* TwentyFourHourPayStructure.swift */; };
+		CF64BD351DDB2D94008ACF46 /* PayStructureComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF64BD341DDB2D94008ACF46 /* PayStructureComponent.swift */; };
+		CF64BD371DDB2E13008ACF46 /* PayStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF64BD361DDB2E13008ACF46 /* PayStructure.swift */; };
+		CF64BD391DDB5C24008ACF46 /* TimeLimited.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF64BD381DDB5C24008ACF46 /* TimeLimited.swift */; };
+		CF64BD3B1DDB628A008ACF46 /* HolidayRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF64BD3A1DDB628A008ACF46 /* HolidayRate.swift */; };
+		CF79FA0B1DD27BC300B8BA17 /* ManagedObjectType+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF79FA0A1DD27BC300B8BA17 /* ManagedObjectType+.swift */; };
+		CF79FA0D1DD288E700B8BA17 /* ErrorTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF79FA0C1DD288E700B8BA17 /* ErrorTypes.swift */; };
+		CF79FA0F1DD28FCD00B8BA17 /* SecondsToHoursValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF79FA0E1DD28FCD00B8BA17 /* SecondsToHoursValueTransformer.swift */; };
+		CF7C2ECF1DD1382A0020BF34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7C2ECE1DD1382A0020BF34 /* AppDelegate.swift */; };
+		CF7C2ED11DD1382A0020BF34 /* ShiftsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7C2ED01DD1382A0020BF34 /* ShiftsTableViewController.swift */; };
+		CF7C2ED61DD1382A0020BF34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF7C2ED51DD1382A0020BF34 /* Assets.xcassets */; };
+		CF7C2ED91DD1382A0020BF34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF7C2ED71DD1382A0020BF34 /* Main.storyboard */; };
+		CF7C2EE41DD1382A0020BF34 /* BankManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7C2EE31DD1382A0020BF34 /* BankManagerUITests.swift */; };
+		CF7C2EEF1DD13C8F0020BF34 /* shifts.csv in Resources */ = {isa = PBXBuildFile; fileRef = CF7C2EEE1DD13C8F0020BF34 /* shifts.csv */; };
+		CF83CFA81DD20D2D0034006B /* Site.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF83CFA71DD20D2D0034006B /* Site.swift */; };
+		CF83CFAA1DD212930034006B /* Ward.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF83CFA91DD212920034006B /* Ward.swift */; };
+		CF83CFAC1DD24F7B0034006B /* NewShiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF83CFAB1DD24F7B0034006B /* NewShiftViewController.swift */; };
+		CF83CFAE1DD254270034006B /* NSDate+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF83CFAD1DD254270034006B /* NSDate+.swift */; };
+		CF83CFB01DD254450034006B /* NSManagedObjectContext+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF83CFAF1DD254450034006B /* NSManagedObjectContext+.swift */; };
+		CF83CFB21DD2546E0034006B /* ManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF83CFB11DD2546E0034006B /* ManagedObject.swift */; };
+		CF83CFB51DD254DB0034006B /* Shift.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF83CFB41DD254DB0034006B /* Shift.swift */; };
+		CFE593CA1DDA6E2400E4CAD9 /* BankManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFE593C81DDA6E2400E4CAD9 /* BankManager.xcdatamodeld */; };
+		CFE593CC1DDA6E9B00E4CAD9 /* HourlyRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE593CB1DDA6E9B00E4CAD9 /* HourlyRate.swift */; };
+		CFE593CE1DDA721100E4CAD9 /* NSDateFormatter+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE593CD1DDA721100E4CAD9 /* NSDateFormatter+.swift */; };
+		CFE593D01DDB1EA900E4CAD9 /* NationalInsurance.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE593CF1DDB1EA900E4CAD9 /* NationalInsurance.swift */; };
+		CFE593D21DDB1F9300E4CAD9 /* TaxStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE593D11DDB1F9300E4CAD9 /* TaxStructure.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF7C2EE01DD1382A0020BF34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF7C2EC31DD1382A0020BF34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF7C2ECA1DD1382A0020BF34;
+			remoteInfo = BankManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF64BD301DDB2CD3008ACF46 /* Weekday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weekday.swift; sourceTree = "<group>"; };
+		CF64BD321DDB2D08008ACF46 /* TwentyFourHourPayStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwentyFourHourPayStructure.swift; sourceTree = "<group>"; };
+		CF64BD341DDB2D94008ACF46 /* PayStructureComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayStructureComponent.swift; sourceTree = "<group>"; };
+		CF64BD361DDB2E13008ACF46 /* PayStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayStructure.swift; sourceTree = "<group>"; };
+		CF64BD381DDB5C24008ACF46 /* TimeLimited.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLimited.swift; sourceTree = "<group>"; };
+		CF64BD3A1DDB628A008ACF46 /* HolidayRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayRate.swift; sourceTree = "<group>"; };
+		CF79FA0A1DD27BC300B8BA17 /* ManagedObjectType+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedObjectType+.swift"; sourceTree = "<group>"; };
+		CF79FA0C1DD288E700B8BA17 /* ErrorTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorTypes.swift; sourceTree = "<group>"; };
+		CF79FA0E1DD28FCD00B8BA17 /* SecondsToHoursValueTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondsToHoursValueTransformer.swift; sourceTree = "<group>"; };
+		CF7C2ECB1DD1382A0020BF34 /* BankManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF7C2ECE1DD1382A0020BF34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF7C2ED01DD1382A0020BF34 /* ShiftsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftsTableViewController.swift; sourceTree = "<group>"; };
+		CF7C2ED51DD1382A0020BF34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF7C2ED81DD1382A0020BF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF7C2EDA1DD1382A0020BF34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF7C2EDF1DD1382A0020BF34 /* BankManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF7C2EE31DD1382A0020BF34 /* BankManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankManagerUITests.swift; sourceTree = "<group>"; };
+		CF7C2EE51DD1382A0020BF34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF7C2EEE1DD13C8F0020BF34 /* shifts.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shifts.csv; sourceTree = "<group>"; };
+		CF83CFA71DD20D2D0034006B /* Site.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Site.swift; sourceTree = "<group>"; };
+		CF83CFA91DD212920034006B /* Ward.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ward.swift; sourceTree = "<group>"; };
+		CF83CFAB1DD24F7B0034006B /* NewShiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewShiftViewController.swift; sourceTree = "<group>"; };
+		CF83CFAD1DD254270034006B /* NSDate+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+.swift"; sourceTree = "<group>"; };
+		CF83CFAF1DD254450034006B /* NSManagedObjectContext+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+.swift"; sourceTree = "<group>"; };
+		CF83CFB11DD2546E0034006B /* ManagedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedObject.swift; sourceTree = "<group>"; };
+		CF83CFB41DD254DB0034006B /* Shift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shift.swift; sourceTree = "<group>"; };
+		CFE593C91DDA6E2400E4CAD9 /* BankManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BankManager.xcdatamodel; sourceTree = "<group>"; };
+		CFE593CB1DDA6E9B00E4CAD9 /* HourlyRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlyRate.swift; sourceTree = "<group>"; };
+		CFE593CD1DDA721100E4CAD9 /* NSDateFormatter+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDateFormatter+.swift"; sourceTree = "<group>"; };
+		CFE593CF1DDB1EA900E4CAD9 /* NationalInsurance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NationalInsurance.swift; sourceTree = "<group>"; };
+		CFE593D11DDB1F9300E4CAD9 /* TaxStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxStructure.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF7C2EC81DD1382A0020BF34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF7C2EDC1DD1382A0020BF34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF64BD2F1DDB2C1C008ACF46 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF7C2ED01DD1382A0020BF34 /* ShiftsTableViewController.swift */,
+				CF83CFAB1DD24F7B0034006B /* NewShiftViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CF79FA101DD3408100B8BA17 /* Transformers */ = {
+			isa = PBXGroup;
+			children = (
+				CF79FA0E1DD28FCD00B8BA17 /* SecondsToHoursValueTransformer.swift */,
+			);
+			name = Transformers;
+			sourceTree = "<group>";
+		};
+		CF79FA111DD3409500B8BA17 /* Managed Objects */ = {
+			isa = PBXGroup;
+			children = (
+				CFE593D11DDB1F9300E4CAD9 /* TaxStructure.swift */,
+				CF64BD361DDB2E13008ACF46 /* PayStructure.swift */,
+				CF64BD381DDB5C24008ACF46 /* TimeLimited.swift */,
+				CF83CFB11DD2546E0034006B /* ManagedObject.swift */,
+				CFE593CB1DDA6E9B00E4CAD9 /* HourlyRate.swift */,
+				CF64BD3A1DDB628A008ACF46 /* HolidayRate.swift */,
+				CFE593CF1DDB1EA900E4CAD9 /* NationalInsurance.swift */,
+				CF83CFA71DD20D2D0034006B /* Site.swift */,
+				CF83CFB41DD254DB0034006B /* Shift.swift */,
+				CF83CFA91DD212920034006B /* Ward.swift */,
+			);
+			name = "Managed Objects";
+			sourceTree = "<group>";
+		};
+		CF7C2EC21DD1382A0020BF34 = {
+			isa = PBXGroup;
+			children = (
+				CF7C2ECD1DD1382A0020BF34 /* BankManager */,
+				CF7C2EE21DD1382A0020BF34 /* BankManagerUITests */,
+				CF7C2ECC1DD1382A0020BF34 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF7C2ECC1DD1382A0020BF34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF7C2ECB1DD1382A0020BF34 /* BankManager.app */,
+				CF7C2EDF1DD1382A0020BF34 /* BankManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF7C2ECD1DD1382A0020BF34 /* BankManager */ = {
+			isa = PBXGroup;
+			children = (
+				CFE593C81DDA6E2400E4CAD9 /* BankManager.xcdatamodeld */,
+				CF79FA111DD3409500B8BA17 /* Managed Objects */,
+				CF79FA0C1DD288E700B8BA17 /* ErrorTypes.swift */,
+				CF7C2ECE1DD1382A0020BF34 /* AppDelegate.swift */,
+				CF64BD301DDB2CD3008ACF46 /* Weekday.swift */,
+				CF64BD321DDB2D08008ACF46 /* TwentyFourHourPayStructure.swift */,
+				CF64BD341DDB2D94008ACF46 /* PayStructureComponent.swift */,
+				CF64BD2F1DDB2C1C008ACF46 /* View Controllers */,
+				CF79FA101DD3408100B8BA17 /* Transformers */,
+				CF83CFB31DD2548F0034006B /* Extensions */,
+				CF7C2ED51DD1382A0020BF34 /* Assets.xcassets */,
+				CF7C2ED71DD1382A0020BF34 /* Main.storyboard */,
+				CF7C2EDA1DD1382A0020BF34 /* Info.plist */,
+				CF7C2EEE1DD13C8F0020BF34 /* shifts.csv */,
+			);
+			path = BankManager;
+			sourceTree = "<group>";
+		};
+		CF7C2EE21DD1382A0020BF34 /* BankManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF7C2EE31DD1382A0020BF34 /* BankManagerUITests.swift */,
+				CF7C2EE51DD1382A0020BF34 /* Info.plist */,
+			);
+			path = BankManagerUITests;
+			sourceTree = "<group>";
+		};
+		CF83CFB31DD2548F0034006B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CF83CFAD1DD254270034006B /* NSDate+.swift */,
+				CF83CFAF1DD254450034006B /* NSManagedObjectContext+.swift */,
+				CF79FA0A1DD27BC300B8BA17 /* ManagedObjectType+.swift */,
+				CFE593CD1DDA721100E4CAD9 /* NSDateFormatter+.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF7C2ECA1DD1382A0020BF34 /* BankManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF7C2EE81DD1382A0020BF34 /* Build configuration list for PBXNativeTarget "BankManager" */;
+			buildPhases = (
+				CF7C2EC71DD1382A0020BF34 /* Sources */,
+				CF7C2EC81DD1382A0020BF34 /* Frameworks */,
+				CF7C2EC91DD1382A0020BF34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BankManager;
+			productName = BankManager;
+			productReference = CF7C2ECB1DD1382A0020BF34 /* BankManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF7C2EDE1DD1382A0020BF34 /* BankManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF7C2EEB1DD1382A0020BF34 /* Build configuration list for PBXNativeTarget "BankManagerUITests" */;
+			buildPhases = (
+				CF7C2EDB1DD1382A0020BF34 /* Sources */,
+				CF7C2EDC1DD1382A0020BF34 /* Frameworks */,
+				CF7C2EDD1DD1382A0020BF34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF7C2EE11DD1382A0020BF34 /* PBXTargetDependency */,
+			);
+			name = BankManagerUITests;
+			productName = BankManagerUITests;
+			productReference = CF7C2EDF1DD1382A0020BF34 /* BankManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF7C2EC31DD1382A0020BF34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = paulpatterson;
+				TargetAttributes = {
+					CF7C2ECA1DD1382A0020BF34 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					CF7C2EDE1DD1382A0020BF34 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = CF7C2ECA1DD1382A0020BF34;
+					};
+				};
+			};
+			buildConfigurationList = CF7C2EC61DD1382A0020BF34 /* Build configuration list for PBXProject "BankManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF7C2EC21DD1382A0020BF34;
+			productRefGroup = CF7C2ECC1DD1382A0020BF34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF7C2ECA1DD1382A0020BF34 /* BankManager */,
+				CF7C2EDE1DD1382A0020BF34 /* BankManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF7C2EC91DD1382A0020BF34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF7C2ED61DD1382A0020BF34 /* Assets.xcassets in Resources */,
+				CF7C2EEF1DD13C8F0020BF34 /* shifts.csv in Resources */,
+				CF7C2ED91DD1382A0020BF34 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF7C2EDD1DD1382A0020BF34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF7C2EC71DD1382A0020BF34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF64BD371DDB2E13008ACF46 /* PayStructure.swift in Sources */,
+				CF64BD351DDB2D94008ACF46 /* PayStructureComponent.swift in Sources */,
+				CFE593D01DDB1EA900E4CAD9 /* NationalInsurance.swift in Sources */,
+				CF79FA0B1DD27BC300B8BA17 /* ManagedObjectType+.swift in Sources */,
+				CF64BD311DDB2CD3008ACF46 /* Weekday.swift in Sources */,
+				CF64BD391DDB5C24008ACF46 /* TimeLimited.swift in Sources */,
+				CFE593D21DDB1F9300E4CAD9 /* TaxStructure.swift in Sources */,
+				CF7C2ED11DD1382A0020BF34 /* ShiftsTableViewController.swift in Sources */,
+				CF83CFB21DD2546E0034006B /* ManagedObject.swift in Sources */,
+				CF83CFB51DD254DB0034006B /* Shift.swift in Sources */,
+				CF83CFAE1DD254270034006B /* NSDate+.swift in Sources */,
+				CF83CFB01DD254450034006B /* NSManagedObjectContext+.swift in Sources */,
+				CF83CFAA1DD212930034006B /* Ward.swift in Sources */,
+				CF83CFAC1DD24F7B0034006B /* NewShiftViewController.swift in Sources */,
+				CF83CFA81DD20D2D0034006B /* Site.swift in Sources */,
+				CF79FA0F1DD28FCD00B8BA17 /* SecondsToHoursValueTransformer.swift in Sources */,
+				CF79FA0D1DD288E700B8BA17 /* ErrorTypes.swift in Sources */,
+				CF7C2ECF1DD1382A0020BF34 /* AppDelegate.swift in Sources */,
+				CF64BD331DDB2D08008ACF46 /* TwentyFourHourPayStructure.swift in Sources */,
+				CF64BD3B1DDB628A008ACF46 /* HolidayRate.swift in Sources */,
+				CFE593CA1DDA6E2400E4CAD9 /* BankManager.xcdatamodeld in Sources */,
+				CFE593CC1DDA6E9B00E4CAD9 /* HourlyRate.swift in Sources */,
+				CFE593CE1DDA721100E4CAD9 /* NSDateFormatter+.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF7C2EDB1DD1382A0020BF34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF7C2EE41DD1382A0020BF34 /* BankManagerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF7C2EE11DD1382A0020BF34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF7C2ECA1DD1382A0020BF34 /* BankManager */;
+			targetProxy = CF7C2EE01DD1382A0020BF34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF7C2ED71DD1382A0020BF34 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF7C2ED81DD1382A0020BF34 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF7C2EE61DD1382A0020BF34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF7C2EE71DD1382A0020BF34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CF7C2EE91DD1382A0020BF34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BankManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulpatterson.BankManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CF7C2EEA1DD1382A0020BF34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BankManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulpatterson.BankManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CF7C2EEC1DD1382A0020BF34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BankManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulpatterson.BankManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BankManager;
+			};
+			name = Debug;
+		};
+		CF7C2EED1DD1382A0020BF34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BankManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulpatterson.BankManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BankManager;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF7C2EC61DD1382A0020BF34 /* Build configuration list for PBXProject "BankManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF7C2EE61DD1382A0020BF34 /* Debug */,
+				CF7C2EE71DD1382A0020BF34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF7C2EE81DD1382A0020BF34 /* Build configuration list for PBXNativeTarget "BankManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF7C2EE91DD1382A0020BF34 /* Debug */,
+				CF7C2EEA1DD1382A0020BF34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF7C2EEB1DD1382A0020BF34 /* Build configuration list for PBXNativeTarget "BankManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF7C2EEC1DD1382A0020BF34 /* Debug */,
+				CF7C2EED1DD1382A0020BF34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CFE593C81DDA6E2400E4CAD9 /* BankManager.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CFE593C91DDA6E2400E4CAD9 /* BankManager.xcdatamodel */,
+			);
+			currentVersion = CFE593C91DDA6E2400E4CAD9 /* BankManager.xcdatamodel */;
+			path = BankManager.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CF7C2EC31DD1382A0020BF34 /* Project object */;
+}

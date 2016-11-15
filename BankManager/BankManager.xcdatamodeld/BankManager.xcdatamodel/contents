@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Automatic">
+    <entity name="HolidayRate" representedClassName=".HolidayRate" syncable="YES">
+        <attribute name="effectiveFrom" attributeType="Date" syncable="YES"/>
+        <attribute name="effectiveUntil" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="rate" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="HourlyRate" representedClassName=".HourlyRate" syncable="YES">
+        <attribute name="effectiveFrom" attributeType="Date" syncable="YES"/>
+        <attribute name="effectiveUntil" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="rate" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="NIStructure" syncable="YES">
+        <attribute name="effectiveFrom" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="effectiveUntil" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="primaryRate" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="primaryThreshold" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="upperEarningsLimit" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="upperRate" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="PayStructure" representedClassName=".PayStructure" syncable="YES">
+        <attribute name="dateLinkedPayStructures" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="effectiveFrom" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="effectiveUntil" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="weekdayLinkedPayStructures" optional="YES" attributeType="Transformable" syncable="YES"/>
+    </entity>
+    <entity name="PensionRate" syncable="YES">
+        <attribute name="effectiveFrom" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="effectiveUntil" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="rate" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="Shift" representedClassName=".Shift" syncable="YES">
+        <attribute name="accruedBasicHours" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="end" attributeType="Date" syncable="YES"/>
+        <attribute name="grossPay" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="holidayPay" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="holidayTime" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="paidTime" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="start" attributeType="Date" indexed="YES" syncable="YES"/>
+        <attribute name="totalTime" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="unpaidTime" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="ward" maxCount="1" deletionRule="Nullify" destinationEntity="Ward" inverseName="shifts" inverseEntity="Ward" syncable="YES"/>
+    </entity>
+    <entity name="Site" representedClassName=".Site" syncable="YES">
+        <attribute name="acronym" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="postCode" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="wards" toMany="YES" deletionRule="Nullify" destinationEntity="Ward" inverseName="site" inverseEntity="Ward" syncable="YES"/>
+    </entity>
+    <entity name="TaxStructure" syncable="YES">
+        <attribute name="basicRate" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="effectiveFrom" attributeType="Date" syncable="YES"/>
+        <attribute name="effectiveUntil" attributeType="Date" syncable="YES"/>
+        <attribute name="personalAllowance" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="Ward" representedClassName=".Ward" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="shifts" toMany="YES" deletionRule="Nullify" destinationEntity="Shift" inverseName="ward" inverseEntity="Shift" syncable="YES"/>
+        <relationship name="site" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Site" inverseName="wards" inverseEntity="Site" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="HolidayRate" positionX="-9" positionY="108" width="128" height="90"/>
+        <element name="HourlyRate" positionX="-45" positionY="63" width="128" height="90"/>
+        <element name="NIStructure" positionX="-27" positionY="81" width="128" height="135"/>
+        <element name="PayStructure" positionX="9" positionY="126" width="128" height="105"/>
+        <element name="PensionRate" positionX="27" positionY="135" width="128" height="90"/>
+        <element name="Shift" positionX="-63" positionY="-18" width="128" height="195"/>
+        <element name="Site" positionX="-54" positionY="9" width="128" height="105"/>
+        <element name="TaxStructure" positionX="-36" positionY="72" width="128" height="105"/>
+        <element name="Ward" positionX="-36" positionY="18" width="128" height="90"/>
+    </elements>
+</model>
