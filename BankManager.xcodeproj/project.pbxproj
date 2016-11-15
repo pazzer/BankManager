@@ -11,7 +11,6 @@
 		CF64BD331DDB2D08008ACF46 /* TwentyFourHourPayStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF64BD321DDB2D08008ACF46 /* TwentyFourHourPayStructure.swift */; };
 		CF64BD351DDB2D94008ACF46 /* PayStructureComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF64BD341DDB2D94008ACF46 /* PayStructureComponent.swift */; };
 		CF64BD371DDB2E13008ACF46 /* PayStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF64BD361DDB2E13008ACF46 /* PayStructure.swift */; };
-		CF64BD391DDB5C24008ACF46 /* TimeLimited.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF64BD381DDB5C24008ACF46 /* TimeLimited.swift */; };
 		CF64BD3B1DDB628A008ACF46 /* HolidayRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF64BD3A1DDB628A008ACF46 /* HolidayRate.swift */; };
 		CF79FA0B1DD27BC300B8BA17 /* ManagedObjectType+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF79FA0A1DD27BC300B8BA17 /* ManagedObjectType+.swift */; };
 		CF79FA0D1DD288E700B8BA17 /* ErrorTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF79FA0C1DD288E700B8BA17 /* ErrorTypes.swift */; };
@@ -51,7 +50,6 @@
 		CF64BD321DDB2D08008ACF46 /* TwentyFourHourPayStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwentyFourHourPayStructure.swift; sourceTree = "<group>"; };
 		CF64BD341DDB2D94008ACF46 /* PayStructureComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayStructureComponent.swift; sourceTree = "<group>"; };
 		CF64BD361DDB2E13008ACF46 /* PayStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayStructure.swift; sourceTree = "<group>"; };
-		CF64BD381DDB5C24008ACF46 /* TimeLimited.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLimited.swift; sourceTree = "<group>"; };
 		CF64BD3A1DDB628A008ACF46 /* HolidayRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayRate.swift; sourceTree = "<group>"; };
 		CF79FA0A1DD27BC300B8BA17 /* ManagedObjectType+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedObjectType+.swift"; sourceTree = "<group>"; };
 		CF79FA0C1DD288E700B8BA17 /* ErrorTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorTypes.swift; sourceTree = "<group>"; };
@@ -107,6 +105,16 @@
 			name = "View Controllers";
 			sourceTree = "<group>";
 		};
+		CF64BD3C1DDBACBC008ACF46 /* Shift Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				CF64BD301DDB2CD3008ACF46 /* Weekday.swift */,
+				CF64BD321DDB2D08008ACF46 /* TwentyFourHourPayStructure.swift */,
+				CF64BD341DDB2D94008ACF46 /* PayStructureComponent.swift */,
+			);
+			name = "Shift Parsing";
+			sourceTree = "<group>";
+		};
 		CF79FA101DD3408100B8BA17 /* Transformers */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,10 +126,9 @@
 		CF79FA111DD3409500B8BA17 /* Managed Objects */ = {
 			isa = PBXGroup;
 			children = (
+				CF83CFB11DD2546E0034006B /* ManagedObject.swift */,
 				CFE593D11DDB1F9300E4CAD9 /* TaxStructure.swift */,
 				CF64BD361DDB2E13008ACF46 /* PayStructure.swift */,
-				CF64BD381DDB5C24008ACF46 /* TimeLimited.swift */,
-				CF83CFB11DD2546E0034006B /* ManagedObject.swift */,
 				CFE593CB1DDA6E9B00E4CAD9 /* HourlyRate.swift */,
 				CF64BD3A1DDB628A008ACF46 /* HolidayRate.swift */,
 				CFE593CF1DDB1EA900E4CAD9 /* NationalInsurance.swift */,
@@ -157,9 +164,7 @@
 				CF79FA111DD3409500B8BA17 /* Managed Objects */,
 				CF79FA0C1DD288E700B8BA17 /* ErrorTypes.swift */,
 				CF7C2ECE1DD1382A0020BF34 /* AppDelegate.swift */,
-				CF64BD301DDB2CD3008ACF46 /* Weekday.swift */,
-				CF64BD321DDB2D08008ACF46 /* TwentyFourHourPayStructure.swift */,
-				CF64BD341DDB2D94008ACF46 /* PayStructureComponent.swift */,
+				CF64BD3C1DDBACBC008ACF46 /* Shift Parsing */,
 				CF64BD2F1DDB2C1C008ACF46 /* View Controllers */,
 				CF79FA101DD3408100B8BA17 /* Transformers */,
 				CF83CFB31DD2548F0034006B /* Extensions */,
@@ -297,7 +302,6 @@
 				CFE593D01DDB1EA900E4CAD9 /* NationalInsurance.swift in Sources */,
 				CF79FA0B1DD27BC300B8BA17 /* ManagedObjectType+.swift in Sources */,
 				CF64BD311DDB2CD3008ACF46 /* Weekday.swift in Sources */,
-				CF64BD391DDB5C24008ACF46 /* TimeLimited.swift in Sources */,
 				CFE593D21DDB1F9300E4CAD9 /* TaxStructure.swift in Sources */,
 				CF7C2ED11DD1382A0020BF34 /* ShiftsTableViewController.swift in Sources */,
 				CF83CFB21DD2546E0034006B /* ManagedObject.swift in Sources */,
