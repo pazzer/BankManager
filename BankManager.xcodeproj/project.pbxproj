@@ -14,6 +14,7 @@
 		CF64BD3B1DDB628A008ACF46 /* HolidayRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF64BD3A1DDB628A008ACF46 /* HolidayRate.swift */; };
 		CF64BD3E1DDCEC1B008ACF46 /* NewLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF64BD3D1DDCEC1A008ACF46 /* NewLocationViewController.swift */; };
 		CF64BD421DDD130E008ACF46 /* BorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF64BD411DDD130E008ACF46 /* BorderedView.swift */; };
+		CF64BD441DDD1BA6008ACF46 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CF64BD431DDD1BA6008ACF46 /* README.md */; };
 		CF79FA0B1DD27BC300B8BA17 /* ManagedObjectType+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF79FA0A1DD27BC300B8BA17 /* ManagedObjectType+.swift */; };
 		CF79FA0D1DD288E700B8BA17 /* ErrorTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF79FA0C1DD288E700B8BA17 /* ErrorTypes.swift */; };
 		CF79FA0F1DD28FCD00B8BA17 /* SecondsToHoursValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF79FA0E1DD28FCD00B8BA17 /* SecondsToHoursValueTransformer.swift */; };
@@ -55,6 +56,7 @@
 		CF64BD3A1DDB628A008ACF46 /* HolidayRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayRate.swift; sourceTree = "<group>"; };
 		CF64BD3D1DDCEC1A008ACF46 /* NewLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewLocationViewController.swift; sourceTree = "<group>"; };
 		CF64BD411DDD130E008ACF46 /* BorderedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedView.swift; sourceTree = "<group>"; };
+		CF64BD431DDD1BA6008ACF46 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CF79FA0A1DD27BC300B8BA17 /* ManagedObjectType+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedObjectType+.swift"; sourceTree = "<group>"; };
 		CF79FA0C1DD288E700B8BA17 /* ErrorTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorTypes.swift; sourceTree = "<group>"; };
 		CF79FA0E1DD28FCD00B8BA17 /* SecondsToHoursValueTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondsToHoursValueTransformer.swift; sourceTree = "<group>"; };
@@ -106,7 +108,6 @@
 				CF64BD3D1DDCEC1A008ACF46 /* NewLocationViewController.swift */,
 				CF7C2ED01DD1382A0020BF34 /* ShiftsTableViewController.swift */,
 				CF83CFAB1DD24F7B0034006B /* NewShiftViewController.swift */,
-				CF64BD411DDD130E008ACF46 /* BorderedView.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -119,6 +120,14 @@
 				CF64BD341DDB2D94008ACF46 /* ShiftComponent.swift */,
 			);
 			name = "Shift Parsing";
+			sourceTree = "<group>";
+		};
+		CF64BD451DDD1BD7008ACF46 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF64BD411DDD130E008ACF46 /* BorderedView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		CF79FA101DD3408100B8BA17 /* Transformers */ = {
@@ -148,6 +157,7 @@
 		CF7C2EC21DD1382A0020BF34 = {
 			isa = PBXGroup;
 			children = (
+				CF64BD431DDD1BA6008ACF46 /* README.md */,
 				CF7C2ECD1DD1382A0020BF34 /* BankManager */,
 				CF7C2EE21DD1382A0020BF34 /* BankManagerUITests */,
 				CF7C2ECC1DD1382A0020BF34 /* Products */,
@@ -170,6 +180,7 @@
 				CFE593C81DDA6E2400E4CAD9 /* BankManager.xcdatamodeld */,
 				CF79FA111DD3409500B8BA17 /* Managed Objects */,
 				CF64BD3C1DDBACBC008ACF46 /* Shift Parsing */,
+				CF64BD451DDD1BD7008ACF46 /* Views */,
 				CF64BD2F1DDB2C1C008ACF46 /* View Controllers */,
 				CF79FA101DD3408100B8BA17 /* Transformers */,
 				CF83CFB31DD2548F0034006B /* Extensions */,
@@ -315,6 +326,7 @@
 				CF83CFB21DD2546E0034006B /* ManagedObject.swift in Sources */,
 				CF83CFB51DD254DB0034006B /* Shift.swift in Sources */,
 				CF83CFAE1DD254270034006B /* NSDate+.swift in Sources */,
+				CF64BD441DDD1BA6008ACF46 /* README.md in Sources */,
 				CF83CFB01DD254450034006B /* NSManagedObjectContext+.swift in Sources */,
 				CF83CFAA1DD212930034006B /* Ward.swift in Sources */,
 				CF83CFAC1DD24F7B0034006B /* NewShiftViewController.swift in Sources */,
