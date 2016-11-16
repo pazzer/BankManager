@@ -21,9 +21,10 @@ public final class Site: ManagedObject, ManagedObjectType {
     
     public static var entityName: String {
         return "Site"
+        
     }
     
-    
+    public static var defaultSortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
     
     @NSManaged public var name: String
     @NSManaged public var acronym: String?

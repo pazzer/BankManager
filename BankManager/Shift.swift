@@ -29,6 +29,9 @@ public final class Shift: ManagedObject, ManagedObjectType {
         return dateFormatter
     }()
     
+    dynamic var provisional: Bool {
+        return end.compare(NSDate()) == .OrderedDescending
+    }
     
     public static var entityName: String {
         return "Shift"
@@ -88,9 +91,16 @@ public final class Shift: ManagedObject, ManagedObjectType {
         holidayPay = holidayTime.inHours * payRate.rate
     }
     
+    public static func insertIntoContext(moc: NSManagedObjectContext, start: NSDate, finish: NSDate, ward: Ward) -> Shift {
+        let shift = Shift.insertIntoContext(moc)
+        shift.start = start
+        shift.end = finish
+        shift.ward = ward
+        shift.updateTimeAndMoney()
+        return shift
+    }
+    
     public static func insertIntoContext(moc: NSManagedObjectContext, csvString: String) throws -> Shift {
-        
-        var shift: Shift!
 
         let rawValues = csvString.componentsSeparatedByString(",")
         guard rawValues.count == 4 else {
@@ -128,13 +138,9 @@ public final class Shift: ManagedObject, ManagedObjectType {
         }
         
         let ward = site.wardWithName(wardName, insertIfNecessary: true)!
-        shift = Shift.insertIntoContext(moc)
-        shift.start = startDate
-        shift.end = stopDate
-        shift.ward = ward
-        shift.updateTimeAndMoney()
         
-        return shift
+        return Shift.insertIntoContext(moc, start: startDate, finish: stopDate, ward: ward)
+        
         
     }
     

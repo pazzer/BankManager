@@ -9,4 +9,8 @@
 
 public enum Weekday: Int {
     case Sunday = 1, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday
+    
+    static var workingWeek: [Weekday] = [.Monday, .Tuesday, .Wednesday, .Thursday, .Friday]
+    
+    static var weekend: [Weekday] = [.Saturday, .Sunday]
 }

@@ -18,3 +18,10 @@ enum ShiftParsingError: ErrorType {
 enum ShiftInsertionError: ErrorType {
     case unrecognisedSiteError(siteName: String)
 }
+
+enum TimeStringError: ErrorType {
+    case wrongNumberOfComponents(numComponents: Int)
+    case badHoursString(offendingString: String)
+    case badMinutesString(offendingString: String)
+    case badSecondsString(offendingString: String)
+}

@@ -24,7 +24,7 @@ public class TwentyFourHourPayStructure: NSObject, NSCoding {
         self.rateTransitions = [ ]
     }
         
-    var rate: Double? {
+    public var rate: Double? {
         return rates.count == 1 ? rates.first! : nil
     }
 

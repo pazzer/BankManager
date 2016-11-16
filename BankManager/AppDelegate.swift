@@ -12,14 +12,12 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        
-        installDefaultSites()
-        installDefaultPayStructure()
-        installRateDefaults()
-        
-        
-        insertShiftsStoredInResource("shifts", fileExtension: "csv")
-        
+//        
+//        installDefaultSites()
+//        installDefaultPayStructure()
+//        installRateDefaults()
+//        
+//        insertShiftsStoredInResource("shifts", withFileExtension: "csv")
     }
     
     func installRateDefaults() {
@@ -43,7 +41,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let shortDateFormatter = NSDateFormatter.shortDateFormatter
         
         let holidays = ["2/5/16", "19/9/16", "26/12/16", "27/12/16"].map { shortDateFormatter.dateFromString($0)! }
-        let workingWeek: [Weekday] = [.Monday, .Tuesday, .Wednesday, .Thursday, .Friday]
         
         let weekdayStructure = TwentyFourHourPayStructure(rateTransitions: ["07:00", "20:00"], rates: [1.44, 1.0, 1.44])
         let saturdayStructure = TwentyFourHourPayStructure(rate: 1.44)
@@ -52,14 +49,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let payStructure = PayStructure.insertIntoContext(managedObjectContext)
         payStructure.effectiveFrom = shortDateFormatter.dateFromString("1/1/16")!
         
-        payStructure.setPayStructure(weekdayStructure, forWeekdays: workingWeek)
+        payStructure.setPayStructure(weekdayStructure, forWeekdays: Weekday.workingWeek)
         payStructure.setPayStructure(saturdayStructure, forWeekdays: [.Saturday])
         payStructure.setPayStructure(sundayStructure, forWeekdays: [.Sunday])
         payStructure.setPayStructure(sundayStructure, forDates: holidays)
     }
     
 
-    func insertShiftsStoredInResource(resourceName: String, fileExtension: String) {
+    func insertShiftsStoredInResource(resourceName: String, withFileExtension fileExtension: String) {
         
         if let URL = NSBundle.mainBundle().URLForResource(resourceName, withExtension: fileExtension) {
             do {

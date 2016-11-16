@@ -33,4 +33,28 @@ extension NSDate {
         let calendar = NSCalendar.currentCalendar()
         return calendar.compareDate(self, toDate: otherDate, toUnitGranularity: [NSCalendarUnit.Year, NSCalendarUnit.Month, NSCalendarUnit.Day]) == NSComparisonResult.OrderedSame
     }
+    
+    func dateByAddingFormattedTime(formattedTime: String) -> NSDate {
+        let timeComps = formattedTime.componentsSeparatedByString(":")
+        
+        guard timeComps.count == 3 else {
+            fatalError("\(formattedTime) is incorrectly formatted; expected 'hh:mm:ss' format")
+        }
+        
+        let errorMsg = "Can't create Int from string %@"
+        guard let hours = Int(timeComps[0]) else {
+            fatalError(String(format: errorMsg, timeComps[0]))
+        }
+        
+        guard let minutes = Int(timeComps[1]) else {
+            fatalError(String(format: errorMsg, timeComps[1]))
+        }
+        
+        guard let seconds = Int(timeComps[2]) else {
+            fatalError(String(format: errorMsg, timeComps[2]))
+        }
+        
+        let timeInterval = NSTimeInterval((hours * 60 * 60) + (minutes * 60) + seconds)
+        return dateByAddingTimeInterval(timeInterval)
+    }
 }

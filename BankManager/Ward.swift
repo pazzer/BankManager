@@ -15,7 +15,7 @@ public final class Ward: ManagedObject, ManagedObjectType {
     }
     
     public static var defaultSortDescriptors: [NSSortDescriptor] {
-        return []
+        return [NSSortDescriptor(key:"name", ascending: true)]
     }
     
     @NSManaged public var name: String
