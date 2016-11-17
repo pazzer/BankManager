@@ -2,6 +2,8 @@
 
 This is a small project written to enable me to experiment with some of the ideas discussed by Kugler and Eggert in their book *objc Core Data*. It's a simple database app that allows employees of NHS Lothian's Staff Bank to keep track of the work they've done, and the money they're owed. Shifts are added via a simple form (a cocoa *sheet*), and displayed in a spreadsheet-style interface. 
 
+![Alt text](BankManagerUI?raw=true "Bank Manager User Interface")
+
 In addition to being of use to developers looking for a Core Data playground, the project showcases a number of other cocoa technologies that will be of interest to anyone interested in developing for the cocoa/cocoa-touch platforms; here's a rundown:
 
 
